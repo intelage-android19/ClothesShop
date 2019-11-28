@@ -1,0 +1,143 @@
+<?xml version="1.0" encoding="utf-8"?>
+<android.support.constraint.ConstraintLayout
+    xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    tools:context=".activity.WishlistActivity">
+    <include
+        layout="@layout/app_bar_home"
+        android:id="@+id/appbar"/>
+    <ScrollView
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:id="@+id/wishView"
+        app:layout_constraintTop_toBottomOf="@id/appbar"
+        android:layout_marginTop="?attr/actionBarSize"
+        app:layout_constraintStart_toStartOf="parent">
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:orientation="vertical">
+            <android.support.v7.widget.RecyclerView
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:scrollbars="none"
+                android:id="@+id/wishlistRecycler"/>
+        </LinearLayout>
+    </ScrollView>
+    
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:orientation="vertical"
+        android:id="@+id/emptyWishlist"
+        android:visibility="gone"
+        android:layout_marginTop="?attr/actionBarSize"
+        app:layout_constraintTop_toBottomOf="@+id/appbar"
+        app:layout_constraintStart_toStartOf="parent"
+        android:background="@color/colowhite"
+        android:gravity="center">
+        <TextView
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text="Your Wishlist Is Empty"
+            android:textSize="18dp"
+            android:textColor="@color/cartbtncolor"
+            android:textStyle="bold"
+            />
+        <com.example.clothesshop.designs.CustomButton
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:background="@drawable/cartbtn"
+            android:textStyle="bold"
+            android:id="@+id/btnshopnow"
+            android:layout_margin="20dp"
+            android:textColor="@color/colowhite"
+            android:textSize="12dp"
+            android:text="SHOP NOW"/>
+    </LinearLayout>
+
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:id="@+id/detailsLayout"
+        android:visibility="gone"
+        android:background="@color/transparentblack"
+        android:orientation="vertical">
+        <ImageView
+            android:layout_width="match_parent"
+            android:layout_height="30dp"
+            android:layout_margin="10dp"
+            android:id="@+id/btnclose"
+            android:scaleType="fitEnd"
+            app:srcCompat="@drawable/close" />
+
+        <HorizontalScrollView
+            android:layout_width="match_parent"
+            android:scrollbars="none"
+            android:layout_marginTop="100dp"
+            android:layout_height="400dp">
+            <LinearLayout
+                android:layout_width="match_parent"
+                android:layout_height="match_parent"
+                android:orientation="horizontal">
+
+                <ImageView
+                    android:layout_width="350dp"
+                    android:id="@+id/img1"
+                    android:layout_height="match_parent"
+                    app:srcCompat="@drawable/bottoms" />
+
+                <ImageView
+                    android:layout_width="350dp"
+                    android:id="@+id/img2"
+                    android:layout_height="match_parent"
+                    app:srcCompat="@drawable/bottoms" />
+                <ImageView
+                    android:layout_width="350dp"
+                    android:id="@+id/img3"
+                    android:layout_height="match_parent"
+                    app:srcCompat="@drawable/bottoms" />
+                <ImageView
+                    android:layout_width="350dp"
+                    android:id="@+id/img4"
+                    android:layout_height="match_parent"
+                    app:srcCompat="@drawable/bottoms" />
+                <ImageView
+                    android:layout_width="350dp"
+                    android:id="@+id/img5"
+                    android:layout_height="match_parent"
+                    app:srcCompat="@drawable/bottoms" />
+            </LinearLayout>
+        </HorizontalScrollView>
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:padding="10dp"
+            android:background="@color/colowhite"
+            android:orientation="vertical"
+            android:layout_margin="15dp">
+            <TextView
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:text="Women's Formal Trouser"
+                android:textStyle="bold"
+                android:textSize="15dp"
+                android:id="@+id/prodName1"
+                android:gravity="center_horizontal"/>
+
+            <TextView
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:text="$10"
+                android:textStyle="bold"
+                android:textSize="15dp"
+                android:id="@+id/prodPrice1"
+                android:textColor="@color/colorblack"
+                android:gravity="center_horizontal"/>
+
+        </LinearLayout>
+    </LinearLayout>
+</android.support.constraint.ConstraintLayout>

@@ -1,0 +1,85 @@
+<?xml version="1.0" encoding="utf-8"?>
+<android.support.v7.widget.CardView
+    xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    android:layout_width="match_parent"
+    app:cardCornerRadius="1dp"
+    app:cardUseCompatPadding="true"
+    android:layout_height="wrap_content">
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:orientation="vertical">
+        <ImageView
+            android:id="@+id/prodImg"
+            android:layout_width="match_parent"
+            android:layout_height="200dp"
+            android:scaleType="fitXY"
+            app:srcCompat="@drawable/bottoms" />
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:padding="5dp"
+            android:background="@color/colowhite"
+            android:weightSum="7"
+            android:orientation="horizontal">
+            <LinearLayout
+                android:layout_width="0dp"
+                android:layout_height="wrap_content"
+                android:layout_weight="5"
+                android:id="@+id/details"
+                android:orientation="vertical">
+                <TextView
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:text="GAP"
+                    android:id="@+id/prodBrand"
+                    android:layout_margin="5dp"
+                    android:textSize="14dp"/>
+                <TextView
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:text="Women's Formal Trouser"
+                    android:layout_margin="5dp"
+                    android:id="@+id/prodName"
+                    android:textSize="14dp"/>
+                <TextView
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:text="Rs. 400"
+                    android:textColor="@color/colorblack"
+                    android:textStyle="bold"
+                    android:layout_margin="5dp"
+                    android:id="@+id/prodPrice"
+                    android:textSize="14dp"/>
+                
+            </LinearLayout>
+            <LinearLayout
+                android:layout_width="0dp"
+                android:layout_height="wrap_content"
+                android:orientation="vertical"
+                android:gravity="end"
+                android:layout_weight="2">
+                <ImageView
+                    android:id="@+id/wishlist"
+                    android:layout_width="27dp"
+                    android:layout_height="27dp"
+                    android:layout_weight="1"
+                    android:scaleType="fitEnd"
+                    android:layout_marginBottom="15dp"
+                    app:srcCompat="@drawable/wishlist" />
+                <ImageView
+                    android:id="@+id/cart"
+                    android:layout_width="27dp"
+                    android:layout_height="27dp"
+                    android:layout_weight="1"
+                    android:scaleType="fitEnd"
+                    app:srcCompat="@drawable/cartblack" />
+
+            </LinearLayout>
+
+        </LinearLayout>
+    </LinearLayout>
+
+
+</android.support.v7.widget.CardView>

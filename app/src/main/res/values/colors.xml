@@ -1,0 +1,28 @@
+<?xml version="1.0" encoding="utf-8"?>
+<resources>
+    <color name="colorPrimary">#000000</color>
+    <color name="colorPrimaryDark">#000000</color>
+    <color name="colorAccent">#FFAA01</color>
+    <color name="colowhite">#FFFFFF</color>
+    <color name="colorblack">#000000</color>
+    <color name="transparentPrimary">#7CC74C5E</color>
+    <color name="transparentPrimaryDark">#FFff9496</color>
+    <color name="colorgrey">#F5F2F2</color>
+    <color name="bgwhite">#000FFF</color>
+    <color name="transparent">#AAff34a4</color>
+    <color name="transparentblack">#AA000000</color>
+    <color name="transwhite">#AAffffff</color>
+    <color name="buttoncolor">#C6EC9B</color>
+    <color name="textcolor">#000000</color>
+    <color name="colorGray">#777777</color>
+    <color name="color1">#FF7A7A</color>
+    <color name="color2">#FAE166</color>
+    <color name="color3">#70CDF8</color>
+    <color name="color4">#87FFF1</color>
+    <color name="cartbtncolor">#FA4A59</color>
+    <color name="transback">#00000000</color>
+    <color name="bgcolor">#59B9B9B9</color>
+
+    <color name="transWhite">#AAFFFFFF</color>
+    <color name="transBlack">#AA000000</color>
+</resources>

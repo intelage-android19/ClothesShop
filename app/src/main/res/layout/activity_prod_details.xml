@@ -1,0 +1,206 @@
+<?xml version="1.0" encoding="utf-8"?>
+<android.support.constraint.ConstraintLayout
+    xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    tools:context=".activity.ProdDetailsActivity">
+    <include
+        layout="@layout/app_bar_home"
+        android:id="@+id/appbar"/>
+    <ScrollView
+        android:layout_width="match_parent"
+        app:layout_constraintTop_toBottomOf="@id/appbar"
+        android:layout_marginTop="?attr/actionBarSize"
+        android:layout_height="match_parent">
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:background="@color/colorgrey"
+            android:orientation="vertical">
+            <ImageView
+                android:id="@+id/prodImg"
+                android:layout_width="match_parent"
+                android:layout_height="450dp"
+                android:visibility="gone"
+                android:layout_marginBottom="10dp"
+                android:background="@color/colowhite"
+                app:srcCompat="@drawable/bottoms" />
+            <RelativeLayout
+                android:id="@+id/imageLayout"
+                android:layout_width="match_parent"
+                android:layout_marginBottom="10dp"
+                android:background="@color/colowhite"
+                android:layout_height="match_parent">
+                <android.support.v4.view.ViewPager
+                    android:id="@+id/pager"
+                    android:layout_width="match_parent"
+                    android:layout_height="450dp" />
+
+                <com.viewpagerindicator.CirclePageIndicator
+                    android:id="@+id/indicator"
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:layout_alignParentBottom="true"
+                    android:layout_marginBottom="20dp"
+                    android:padding="5dip"
+                    app:centered="true"
+                    app:fillColor="#df0623"
+                    app:pageColor="#fff"
+                    app:snap="false" />
+
+            </RelativeLayout>
+
+            <LinearLayout
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:padding="15dp"
+                android:background="@color/colowhite"
+                android:orientation="vertical">
+                <TextView
+                    android:id="@+id/txtProductName"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:text="Women's Formal Trouser"
+                    android:textSize="14dp"
+                    android:layout_margin="2dp"
+                    android:textColor="@color/colorblack"/>
+                <TextView
+                    android:id="@+id/txtCategoryName"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:text="GAP"
+                    android:textSize="13dp"
+                    android:layout_margin="2dp"/>
+                <TextView
+                    android:id="@+id/txtProductPrice"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:text="Rs. 599"
+                    android:textSize="15dp"
+                    android:layout_margin="2dp"
+                    android:textStyle="bold"
+                    android:textColor="@color/colorblack"/>
+            </LinearLayout>
+
+            <LinearLayout
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:orientation="vertical"
+                android:padding="15dp"
+                android:background="@color/colowhite"
+                android:layout_marginTop="10dp">
+                <TextView
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:text="Select Size"
+                    />
+                <RelativeLayout
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content">
+                    <TextView
+                        android:id="@+id/txtNoSizes"
+                        android:layout_width="match_parent"
+                        android:layout_height="wrap_content"
+                        android:gravity="center"
+                        android:layout_marginTop="10dp"
+                        android:text="No sizes available."
+                        android:visibility="gone"/>
+                    <LinearLayout
+                        android:id="@+id/sizeView"
+                        android:layout_width="match_parent"
+                        android:layout_height="wrap_content"
+                        android:layout_marginTop="10dp"
+                        android:orientation="vertical"/>
+
+                </RelativeLayout>
+            </LinearLayout>
+
+            <LinearLayout
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_marginTop="10dp"
+                android:padding="5dp"
+                android:orientation="horizontal">
+                <com.example.clothesshop.designs.CustomButton
+                    android:layout_width="0dp"
+                    android:layout_height="wrap_content"
+                    android:layout_weight="1"
+                    android:id="@+id/btnWishlist"
+                    android:text="Wishlist"
+                    android:textColor="@color/colorblack"
+                    android:textStyle="bold"
+                    android:layout_marginRight="8dp"
+                    android:textSize="14dp"
+                    android:background="@drawable/whitebtn"
+                    />
+
+                <com.example.clothesshop.designs.CustomButton
+                    android:layout_width="0dp"
+                    android:layout_height="wrap_content"
+                    android:layout_weight="1.1"
+                    android:text="Add To Cart"
+                    android:id="@+id/btnAddTocart"
+                    android:textColor="@color/colowhite"
+                    android:textStyle="bold"
+                    android:textSize="14dp"
+                    android:background="@drawable/cartbtn"
+                    />
+            </LinearLayout>
+            <LinearLayout
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:orientation="vertical"
+                android:padding="15dp"
+                android:background="@color/colowhite"
+                android:layout_marginTop="10dp">
+                <TextView
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:text="Product Details"
+                    android:textColor="@color/colorblack" />
+                <TextView
+                    android:id="@+id/txtprodDetails"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_marginBottom="10dp"
+                    android:text="Light Brown color,has elastic waist with belt"/>
+
+                <TextView
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:text="Size &amp; Fit"
+                    android:textColor="@color/colorblack" />
+
+                <TextView
+                    android:id="@+id/txtProductSpecification"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_marginBottom="10dp"
+                    android:text="" />
+               <!-- <TextView
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:text="Material"
+                    android:textColor="@color/colorblack" />
+                <TextView
+                    android:id="@+id/txtProductMaterial"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_marginBottom="10dp"
+                    android:text="Cotton"/>
+
+                <TextView
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:text="Machine-wash"
+                    android:textColor="@color/colorblack" />
+-->
+
+            </LinearLayout>
+        </LinearLayout>
+    </ScrollView>
+
+
+</android.support.constraint.ConstraintLayout>

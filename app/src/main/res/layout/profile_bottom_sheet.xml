@@ -1,0 +1,93 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout
+    xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:layout_height="wrap_content"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    android:orientation="vertical"
+    android:padding="30dp"
+    android:visibility="gone"
+    android:id="@+id/profile"
+    android:background="@color/colowhite"
+    android:gravity="center"
+    app:layout_behavior="android.support.design.widget.BottomSheetBehavior">
+
+    <ImageView
+        android:id="@+id/close"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginBottom="10dp"
+        android:layout_alignParentEnd="true"
+        app:srcCompat="@drawable/closeblack" />
+
+    <TextView
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:gravity="center"
+        android:layout_below="@id/close"
+        android:layout_marginBottom="30dp"
+        android:text="UPDATE PROFILE"
+        android:id="@+id/txt"
+        android:textColor="@color/colorPrimary"
+        android:textStyle="bold"
+        android:textSize="18dp"/>
+    <EditText
+        android:id="@+id/editName"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:ems="10"
+        android:layout_below="@id/txt"
+        android:layout_marginBottom="20dp"
+        android:padding="10dp"
+        android:background="@drawable/login_text_bg"
+        android:inputType="textPersonName"
+        android:hint="Name" />
+
+    <EditText
+        android:id="@+id/editMb"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:ems="10"
+        android:layout_below="@id/editName"
+        android:padding="10dp"
+        android:layout_marginBottom="20dp"
+        android:background="@drawable/login_text_bg"
+        android:inputType="phone"
+        android:hint="Mobile No." />
+
+    <EditText
+        android:id="@+id/editEmail"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:ems="10"
+        android:layout_below="@id/editMb"
+        android:padding="10dp"
+        android:layout_marginBottom="20dp"
+        android:background="@drawable/login_text_bg"
+        android:inputType="textEmailAddress"
+        android:hint="Email Address" />
+
+    <EditText
+        android:id="@+id/editPass"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:ems="10"
+        android:layout_below="@id/editEmail"
+        android:layout_marginBottom="20dp"
+        android:padding="10dp"
+        android:background="@drawable/login_text_bg"
+        android:inputType="textPassword"
+        android:hint="Password" />
+
+    <com.example.clothesshop.designs.CustomButton
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:textSize="12dp"
+        android:layout_margin="30dp"
+        android:layout_below="@id/editPass"
+        android:textColor="@color/colowhite"
+        android:textStyle="bold"
+        android:background="@drawable/selector_button"
+        android:text="UPDATE PROFILE"/>
+
+</RelativeLayout>

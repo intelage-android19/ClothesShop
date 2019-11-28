@@ -1,0 +1,544 @@
+<?xml version="1.0" encoding="utf-8"?>
+<layout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools">
+
+    <android.support.v4.widget.NestedScrollView
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content">
+
+        <RelativeLayout
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content">
+
+            <LinearLayout
+                android:layout_width="match_parent"
+                android:layout_height="match_parent"
+                android:background="@color/colorgrey"
+                android:gravity="center"
+                android:orientation="vertical">
+
+
+                <android.support.v7.widget.CardView
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    app:cardCornerRadius="1dp"
+                    app:cardUseCompatPadding="true">
+
+                    <LinearLayout
+                        android:layout_width="match_parent"
+                        android:layout_height="wrap_content"
+                        android:background="@color/colowhite"
+                        android:padding="5dp"
+                        android:weightSum="3">
+
+                        <RelativeLayout
+                            android:layout_width="0dp"
+                            android:layout_height="180dp"
+                            android:layout_weight="1"
+                            android:background="@color/colorblack"
+                            android:padding="2dp">
+
+                            <ImageView
+                                android:id="@+id/imgTopWear"
+                                android:layout_width="130dp"
+                                android:layout_height="180dp"
+                                android:scaleType="fitXY"
+                                android:src="@drawable/coming" />
+
+                            <TextView
+                                android:id="@+id/txtTopWear"
+                                android:layout_width="130dp"
+                                android:layout_height="wrap_content"
+                                android:layout_alignParentBottom="true"
+                                android:layout_marginBottom="20dp"
+                                android:background="@color/color3"
+                                android:gravity="center"
+                                android:padding="8dp"
+                                android:text="Shirts"
+                                android:textColor="@color/colowhite"
+                                android:textStyle="bold"
+                                android:visibility="gone" />
+                        </RelativeLayout>
+
+                        <RelativeLayout
+                            android:layout_width="0dp"
+                            android:layout_height="180dp"
+                            android:layout_marginTop="30dp"
+                            android:layout_weight="1"
+                            android:background="@color/colorblack"
+                            android:padding="2dp">
+
+                            <ImageView
+                                android:id="@+id/imgBottomWear"
+                                android:layout_width="130dp"
+                                android:layout_height="180dp"
+                                android:scaleType="fitXY"
+                                android:src="@drawable/coming" />
+
+                            <TextView
+                                android:id="@+id/txtBottom"
+                                android:layout_width="130dp"
+                                android:layout_height="wrap_content"
+                                android:layout_alignParentBottom="true"
+                                android:layout_marginBottom="20dp"
+                                android:background="@color/color2"
+                                android:gravity="center"
+                                android:paddingTop="8dp"
+                                android:paddingBottom="8dp"
+                                android:text="Tshirts"
+                                android:textColor="@color/colowhite"
+                                android:textStyle="bold"
+                                android:visibility="gone" />
+
+                        </RelativeLayout>
+
+                        <RelativeLayout
+                            android:layout_width="0dp"
+                            android:layout_height="180dp"
+                            android:layout_marginTop="60dp"
+                            android:layout_weight="1"
+                            android:background="@color/colorblack"
+                            android:padding="2dp">
+
+                            <ImageView
+                                android:id="@+id/imgJacket"
+                                android:layout_width="130dp"
+                                android:layout_height="180dp"
+                                android:scaleType="fitXY"
+                                android:src="@drawable/coming" />
+
+                            <TextView
+                                android:id="@+id/txtMenJacket"
+                                android:layout_width="130dp"
+                                android:layout_height="wrap_content"
+                                android:layout_alignParentBottom="true"
+                                android:layout_marginBottom="20dp"
+                                android:background="@color/color4"
+                                android:gravity="center"
+                                android:paddingTop="8dp"
+                                android:paddingBottom="8dp"
+                                android:text="BottomWear"
+                                android:textColor="@color/colowhite"
+                                android:textStyle="bold"
+                                android:visibility="gone" />
+
+
+                        </RelativeLayout>
+
+                    </LinearLayout>
+                </android.support.v7.widget.CardView>
+
+                <TextView
+                    android:id="@+id/txtBrands"
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:layout_marginTop="10dp"
+                    android:layout_marginBottom="10dp"
+                    android:background="@color/colorGray"
+                    android:gravity="center"
+                    android:text="TOP BRANDS"
+                    android:textColor="@color/colowhite"
+                    android:textSize="20dp"
+                    android:textStyle="bold" />
+
+                <android.support.v7.widget.RecyclerView
+                    android:id="@+id/rvTopBrands"
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content" />
+
+                <ImageView
+                    android:id="@+id/off"
+                    android:layout_width="match_parent"
+                    android:layout_height="250dp"
+                    android:layout_margin="5dp"
+                    android:scaleType="fitXY"
+                    android:src="@drawable/menoff" />
+
+                <!--
+                            <TextView
+                                android:layout_width="match_parent"
+                                android:layout_height="wrap_content"
+                                android:textStyle="bold"
+                                android:textColor="@color/colowhite"
+                                android:textSize="20dp"
+                                android:gravity="center"
+                                android:background="@color/colorGray"
+                                android:text="PRICE STORE"
+                                android:layout_marginTop="10dp"
+                                android:layout_marginBottom="10dp"/>
+                -->
+                <!--
+                            <android.support.v7.widget.CardView
+                                android:layout_width="match_parent"
+                                android:layout_height="420dp"
+                                app:cardUseCompatPadding="true"
+                                app:cardCornerRadius="1dp">
+                                <RelativeLayout
+                                    android:layout_width="match_parent"
+                                    android:padding="5dp"
+                                    android:layout_height="match_parent">
+                                    <TextView
+                                        android:layout_width="140dp"
+                                        android:layout_height="20dp"
+                                        android:layout_alignParentStart="true"
+                                        android:layout_marginTop="250dp"
+                                        android:background="@color/color1"
+                                        android:text="Under $25"
+                                        android:textSize="14dp"
+                                        android:textStyle="bold"
+                                        android:gravity="center"
+                                        android:textColor="@color/colowhite"
+                                        />
+                                    <TextView
+                                        android:layout_width="300dp"
+                                        android:layout_height="20dp"
+                                        android:layout_alignParentEnd="true"
+                                        android:layout_marginTop="140dp"
+                                        android:text="Under $17"
+                                        android:paddingLeft="70dp"
+                                        android:textSize="14dp"
+                                        android:textStyle="bold"
+                                        android:textColor="@color/colowhite"
+                                        android:gravity="center_vertical"
+                                        android:background="@color/color2" />
+                                    <TextView
+                                        android:layout_width="120dp"
+                                        android:layout_height="20dp"
+                                        android:layout_alignParentBottom="true"
+                                        android:layout_alignParentEnd="true"
+                                        android:layout_marginBottom="114dp"
+                                        android:background="@color/color3"
+                                        android:text="Under $22"
+                                        android:textSize="14dp"
+                                        android:paddingLeft="30dp"
+                                        android:textStyle="bold"
+                                        android:textColor="@color/colowhite"
+                                        android:gravity="center"
+                                        />
+                                    <TextView
+                                        android:layout_width="140dp"
+                                        android:layout_height="20dp"
+                                        android:layout_alignParentBottom="true"
+                                        android:layout_alignParentStart="true"
+                                        android:background="@color/color4"
+                                        android:text="Under $20"
+                                        android:textSize="14dp"
+                                        android:layout_marginStart="139dp"
+                                        android:textStyle="bold"
+                                        android:paddingRight="10dp"
+                                        android:gravity="center"
+                                        android:textColor="@color/colowhite"
+                                        />
+
+                                    <RelativeLayout
+                                        android:layout_width="140dp"
+                                        android:layout_height="180dp"
+                                        android:layout_alignParentStart="true"
+                                        android:layout_alignParentTop="true"
+                                        android:layout_marginStart="-2dp"
+                                        android:layout_marginTop="69dp"
+                                        >
+                                        <ImageView
+                                            android:layout_width="140dp"
+                                            android:layout_height="180dp"
+                                            android:scaleType="fitXY"
+                                            android:id="@+id/plazzos"
+                                            android:src="@drawable/mensuits" />
+                                        <TextView
+                                            android:layout_width="match_parent"
+                                            android:layout_height="wrap_content"
+                                            android:textColor="@color/colowhite"
+                                            android:textStyle="bold"
+                                            android:text="Formals"
+                                            android:background="@color/transparentblack"
+                                            android:padding="2dp"
+                                            android:gravity="center"
+                                            android:textSize="13dp"
+                                            android:layout_alignParentBottom="true"/>
+
+                                    </RelativeLayout>
+
+                                    <RelativeLayout
+                                        android:layout_width="140dp"
+                                        android:layout_height="140dp"
+                                        android:layout_alignParentStart="true"
+                                        android:layout_alignParentTop="true"
+                                        android:layout_marginStart="137dp"
+                                        >
+                                        <ImageView
+                                            android:layout_width="140dp"
+                                            android:layout_height="140dp"
+                                            android:scaleType="fitXY"
+                                            android:id="@+id/tunics"
+                                            android:src="@drawable/tshitshirt" />
+                                        <TextView
+                                            android:layout_width="match_parent"
+                                            android:layout_height="wrap_content"
+                                            android:textColor="@color/colowhite"
+                                            android:textStyle="bold"
+                                            android:text="Tshirts &amp; Shirts"
+                                            android:background="@color/transparentblack"
+                                            android:padding="2dp"
+                                            android:gravity="center"
+                                            android:textSize="13dp"
+                                            android:layout_alignParentBottom="true"/>
+
+                                    </RelativeLayout>
+
+                                    <RelativeLayout
+                                        android:layout_width="140dp"
+                                        android:layout_height="135sp"
+                                        android:layout_alignParentBottom="true"
+                                        android:layout_alignParentStart="true"
+                                        android:layout_marginBottom="20dp"
+                                        android:layout_marginStart="139dp"
+                                        >
+                                        <ImageView
+                                            android:layout_width="140dp"
+                                            android:layout_height="135dp"
+                                            android:scaleType="fitXY"
+                                            android:id="@+id/dress"
+                                            android:src="@drawable/jackets" />
+                                        <TextView
+                                            android:layout_width="match_parent"
+                                            android:layout_height="wrap_content"
+                                            android:textColor="@color/colowhite"
+                                            android:textStyle="bold"
+                                            android:text="Jackets &amp; Hoodies"
+                                            android:background="@color/transparentblack"
+                                            android:padding="2dp"
+                                            android:gravity="center"
+                                            android:textSize="13dp"
+                                            android:layout_alignParentBottom="true"/>
+
+                                    </RelativeLayout>
+
+                                    <RelativeLayout
+                                        android:layout_width="100dp"
+                                        android:layout_height="150dp"
+                                        android:layout_alignParentTop="true"
+                                        android:layout_alignParentEnd="true"
+                                        android:layout_marginTop="120dp"
+                                        >
+
+                                        <ImageView
+                                            android:layout_width="100dp"
+                                            android:layout_height="150dp"
+                                            android:layout_alignParentTop="true"
+                                            android:layout_marginTop="0dp"
+                                            android:scaleType="fitXY"
+                                            android:id="@+id/jeans"
+                                            android:src="@drawable/jeans1" />
+                                        <TextView
+                                            android:layout_width="match_parent"
+                                            android:layout_height="wrap_content"
+                                            android:textColor="@color/colowhite"
+                                            android:textStyle="bold"
+                                            android:text="Jeans"
+                                            android:background="@color/transparentblack"
+                                            android:padding="2dp"
+                                            android:gravity="center"
+                                            android:textSize="13dp"
+                                            android:layout_alignParentBottom="true"/>
+
+                                    </RelativeLayout>
+
+                                </RelativeLayout>
+                            </android.support.v7.widget.CardView>
+                -->
+
+                <TextView
+                    android:id="@+id/txtNewArrival"
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:layout_marginTop="10dp"
+                    android:layout_marginBottom="10dp"
+                    android:background="@color/colorGray"
+                    android:gravity="center"
+                    android:text="NEW ARRIVALS"
+                    android:textColor="@color/colowhite"
+                    android:textSize="20dp"
+                    android:textStyle="bold" />
+
+                <android.support.v7.widget.RecyclerView
+                    android:id="@+id/rvNewArrivals"
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content" />
+
+
+                <!--
+                            <HorizontalScrollView
+                                android:layout_width="match_parent"
+                                android:layout_height="300dp"
+                                android:scrollbars="none">
+
+                                <LinearLayout
+                                    android:layout_width="wrap_content"
+                                    android:layout_height="match_parent"
+                                    android:orientation="horizontal">
+
+                                    <android.support.v7.widget.CardView
+                                        android:layout_width="wrap_content"
+                                        android:layout_height="wrap_content"
+                                        app:cardCornerRadius="1dp"
+                                        app:cardUseCompatPadding="true">
+
+                                        <RelativeLayout
+                                            android:layout_width="190dp"
+                                            android:layout_height="280dp"
+
+                                            android:background="@color/colowhite">
+
+                                            <ImageView
+                                                android:id="@+id/lehengas"
+                                                android:layout_width="190dp"
+                                                android:layout_height="280dp"
+                                                android:layout_margin="5dp"
+                                                android:scaleType="fitXY"
+                                                android:src="@drawable/menshorts" />
+
+                                            <TextView
+                                                android:layout_width="match_parent"
+                                                android:layout_height="wrap_content"
+                                                android:layout_alignParentBottom="true"
+                                                android:layout_centerInParent="true"
+                                                android:layout_marginLeft="30dp"
+                                                android:layout_marginRight="30dp"
+                                                android:background="@color/colowhite"
+                                                android:gravity="center"
+                                                android:paddingTop="15dp"
+                                                android:paddingBottom="15dp"
+                                                android:text="Hot Summer"
+                                                android:textColor="@color/colorblack"
+                                                android:textSize="16dp"
+                                                android:textStyle="bold" />
+                                        </RelativeLayout>
+                                    </android.support.v7.widget.CardView>
+
+                                    <android.support.v7.widget.CardView
+                                        android:layout_width="wrap_content"
+                                        android:layout_height="wrap_content"
+                                        app:cardCornerRadius="1dp"
+                                        app:cardUseCompatPadding="true">
+
+                                        <RelativeLayout
+                                            android:layout_width="190dp"
+                                            android:layout_height="280dp"
+                                            android:background="@color/colowhite">
+
+                                            <ImageView
+                                                android:id="@+id/hotsummer"
+                                                android:layout_width="190dp"
+                                                android:layout_height="280dp"
+                                                android:layout_margin="5dp"
+                                                android:scaleType="fitXY"
+                                                android:src="@drawable/tshirt1" />
+
+                                            <TextView
+                                                android:layout_width="match_parent"
+                                                android:layout_height="wrap_content"
+                                                android:layout_alignParentBottom="true"
+                                                android:layout_marginLeft="30dp"
+                                                android:layout_marginRight="30dp"
+                                                android:background="@color/colowhite"
+                                                android:gravity="center"
+                                                android:paddingTop="15dp"
+                                                android:paddingBottom="15dp"
+                                                android:text="Tshirts"
+                                                android:textColor="@color/colorblack"
+                                                android:textSize="16dp"
+                                                android:textStyle="bold" />
+                                        </RelativeLayout>
+                                    </android.support.v7.widget.CardView>
+
+                                    <android.support.v7.widget.CardView
+                                        android:layout_width="wrap_content"
+                                        android:layout_height="wrap_content"
+                                        app:cardCornerRadius="1dp"
+                                        app:cardUseCompatPadding="true">
+
+                                        <RelativeLayout
+                                            android:layout_width="190dp"
+                                            android:layout_height="280dp"
+                                            android:background="@color/colowhite">
+
+                                            <ImageView
+                                                android:id="@+id/kurti"
+                                                android:layout_width="190dp"
+                                                android:layout_height="280dp"
+                                                android:layout_margin="5dp"
+                                                android:scaleType="fitXY"
+                                                android:src="@drawable/ethnicmen" />
+
+                                            <TextView
+                                                android:layout_width="match_parent"
+                                                android:layout_height="wrap_content"
+                                                android:layout_alignParentBottom="true"
+                                                android:layout_marginLeft="20dp"
+                                                android:layout_marginRight="30dp"
+                                                android:background="@color/colowhite"
+                                                android:gravity="center"
+                                                android:padding="10dp"
+                                                android:text="Ethnic Wear"
+                                                android:textColor="@color/colorblack"
+                                                android:textSize="16dp"
+                                                android:textStyle="bold" />
+                                        </RelativeLayout>
+                                    </android.support.v7.widget.CardView>
+
+                                    <android.support.v7.widget.CardView
+                                        android:layout_width="wrap_content"
+                                        android:layout_height="wrap_content"
+                                        app:cardCornerRadius="1dp"
+                                        app:cardUseCompatPadding="true">
+
+                                        <RelativeLayout
+                                            android:layout_width="190dp"
+                                            android:layout_height="280dp"
+                                            android:background="@color/colowhite">
+
+                                            <ImageView
+                                                android:id="@+id/ethnicwear"
+                                                android:layout_width="190dp"
+                                                android:layout_height="280dp"
+                                                android:layout_margin="5dp"
+                                                android:scaleType="fitXY"
+                                                android:src="@drawable/shirt1" />
+
+                                            <TextView
+                                                android:layout_width="match_parent"
+                                                android:layout_height="wrap_content"
+                                                android:layout_alignParentBottom="true"
+                                                android:layout_marginLeft="30dp"
+                                                android:layout_marginRight="30dp"
+                                                android:background="@color/colowhite"
+                                                android:gravity="center"
+                                                android:paddingTop="15dp"
+                                                android:paddingBottom="15dp"
+                                                android:text="Shirts"
+                                                android:textColor="@color/colorblack"
+                                                android:textSize="16dp"
+                                                android:textStyle="bold" />
+                                        </RelativeLayout>
+                                    </android.support.v7.widget.CardView>
+                                </LinearLayout>
+                            </HorizontalScrollView>
+                -->
+
+
+            </LinearLayout>
+
+            <include
+                android:id="@+id/progress_gif"
+                layout="@layout/progress_gif"
+                android:layout_width="100dp"
+                android:layout_height="100dp"
+                android:layout_centerInParent="true"
+                android:layout_centerVertical="true"
+                android:layout_centerHorizontal="true"
+            />
+
+        </RelativeLayout>
+    </android.support.v4.widget.NestedScrollView>
+</layout>
